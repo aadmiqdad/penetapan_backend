@@ -2,7 +2,7 @@
 namespace Core\Repositories;
 
 interface LiburRepoInterface {
-    public function Check(string $tgl): array;
+    public function Check(string $tgl): bool;
 }
 
 class LiburRepo implements LiburRepoInterface {
@@ -11,7 +11,7 @@ class LiburRepo implements LiburRepoInterface {
         // 
     }
 
-    public function Check(string $tgl): array {
-        return array(false, null);
+    public function Check(string $tgl): bool {
+        return false;
     }
 }
